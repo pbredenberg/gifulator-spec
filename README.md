@@ -37,7 +37,19 @@ Applications may provide a paged pattern of serving GIF indexes:
 
 `https://my-gifulator.com/1`, `https://my-gifulator.com/2`, and so on.
 
-### 3.3 GIF
+An index should provide the following features:
+
+A. Provide a way to copy the direct URL to a GIF
+B. Provide a way to copy the entire GIF into the clipboard of a given device
+C. Provide a hyperlink to a [GIF Presentation](#user-content-33-gif-presentation)
+
+#### 3.2.1 Taxonomies
+
+Applications may provide a paged taxonomy pattern of serving GIFs as secondary indexes:
+
+`https://my-gifulator.com/my-tag-1`, `https://my-gifulator.com/my-tag-2`, and so on.
+
+### 3.3 GIF Presentation
 
 A single GIF's human-readable metadata and presentation should be available _directly_ from the index:
 
@@ -47,11 +59,17 @@ Or:
 
 `https://my-gifulator.com/my_gif_name`
 
-Each GIF should _not_ be available directly from a [Page](user-content-32-pages).
+Each GIF should _not_ be available directly from a [Page](#user-content-32-pages).
 
 **Avoid**:
 
 `https://my-gifulator.com/1/my_gif_name`
+
+### 3.4 Direct GIF Hyperlinks
+
+A direct link each GIF should be available directly following GIF Presentation:
+
+`https://my-gifulator.com/my_gif_name/my_gif_name.gif`
 
 ## 4. REST API Patterns
 
